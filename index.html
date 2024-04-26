@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prueba de Scrum</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+  }
+ .container {
+    background-color: #ffe5ec; 
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd; 
+  }
+  h1 {
+    background-color: #ffe5ec; 
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .question-container {
+    background-color: #ffe5ec; 
+    padding: 10px;
+    margin: 0;
+  }
+  .question {
+    font-weight: bold;
+  }
+  .options label {
+    display: block; 
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .options {
+    margin-top: 10px;
+  }
+  .option {
+    margin-right: 10px;
+  }
+  .nav-button {
+   background-color: #ffc2d1;
+   color: black;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-right: 10px; 
+  }
+  .nav-button:last-child {
+   margin-right: 0; 
+  }
+  .nav-button:hover {  
+    background-color: black;
+    color: white;
+  }
+  #result {
+    display: none;
+  }
+  #result-button {
+    display: none;
+  }
+  #question-counter {
+    position: absolute;
+    top: 10;
+    right: 10px; 
+    background-color: #ffc2d1;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+</style>
+</head>
+<body>
+<span id="question-counter">1 / 41</span> 
+<h1>Prueba de SCRUM</h1>
+<div id="question-1" class="question-container">
+  <div class="question">1. El Scrum Master es responsable de promover y apoyar Scrum como se define en la Guía de Scrum.</div>
+  <div class="options">
+    <label><input type="radio" name="q1" value="a"> a) Verdadero</label>
+    <label><input type="radio" name="q1" value="b"> b) Falso</label>
+  </div>
+</div>
+
+<div id="question-2" class="question-container">
+  <div class="question">2. Scrum es un(a)…...que ha sido utilizada para gestionar el trabajo en…….complejos.</div>
+  <div class="options">
+    <label><input type="radio" name="q2" value="a"> a) Técnica; Sprint.</label>
+    <label><input type="radio" name="q2" value="b"> b) Proceso; Proyectos.</label>
+    <label><input type="radio" name="q2" value="c"> c) Marco de trabajo; Productos</label>
+    <label><input type="radio" name="q2" value="d"> d) Modelo; Servicios.</label>
+  </div>
+</div>
+
+<div id="question-3" class="question-container">
+  <div class="question">3. Una de las formas en las que el Scrum Master sirve al Product Owner es encontrando técnicas para manejo correcto del Product Backlog.</div>
+  <div class="options">
+    <label><input type="radio" name="q3" value="a"> a) Verdadero</label>
+    <label><input type="radio" name="q3" value="b"> b) Falso</label>
+  </div>
+</div>
+
+<div id="question-4" class="question-container">
+  <div class="question">4. ¿Qué definición no es verdadera sobre Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q4" value="a"> a) Difícil de dominar.</label>
+    <label><input type="radio" name="q4" value="b"> b) Fácil de dominar</label>
+    <label><input type="radio" name="q4" value="c"> c) Sencillo de entender.</label>
+    <label><input type="radio" name="q4" value="d"> d) Ligero.</label>
+  </div>
+</div>
+
+<div id="question-5" class="question-container">
+  <div class="question">5. Remover impedimentos del progreso del Development Team es una responsabilidad del Product Owner.</div>
+  <div class="options">
+    <label><input type="radio" name="q5" value="a"> Verdadero.</label>
+    <label><input type="radio" name="q5" value="b"> Falso</label>
+  </div>
+</div>
+
+<div id="question-6" class="question-container">
+  <div class="question">6. ¿Cuál principio resalta el enfoque de Scrum para entregar el máximo valor de negocio, desde el inicio del proyecto y a lo largo del mismo?</div>
+  <div class="options">
+    <label><input type="radio" name="q6" value="1"> 1. Control del proceso empírico</label>
+    <label><input type="radio" name="q6" value="2"> 2. Colaboración</label>
+    <label><input type="radio" name="q6" value="3"> 3. Priorización basada en valor</label>
+    <label><input type="radio" name="q6" value="4"> 4. Auto - organización</label>
+  </div>
+</div>
+
+<div id="question-7" class="question-container">
+  <div class="question">7. ¿Cual es el mayor numero de personas que debe ser parte del Development Team de acuerdo con la Guia Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q7" value="a"> a) Menos de 3</label>
+    <label><input type="radio" name="q7" value="b"> b) 9 personas</label>
+    <label><input type="radio" name="q7" value="c"> c) Mas de 9.</label>
+    <label><input type="radio" name="q7" value="d"> d) Ninguna de las anteriores.</label>
+  </div>
+</div>
+
+<div id="question-8" class="question-container">
+  <div class="question">8. Un Scrum Master da servicios al Development Team dándoles guía en ambientes organizacionales donde Scrum aun no es adoptado y entendido.</div>
+  <div class="options">
+    <label><input type="radio" name="q8" value="a"> a) Verdadero</label>
+    <label><input type="radio" name="q8" value="b"> b) Falso</label>
+  </div>
+</div>
+
+<div id="question-9" class="question-container">
+  <div class="question">9. De la lista de abajo, identifica el conjunto completo de valores Scrum.</div>
+  <div class="options">
+    <label><input type="radio" name="q9" value="a"> a) Transparencia, inspección y adaptación.</label>
+    <label><input type="radio" name="q9" value="b"> b) Compromiso, coraje, apertura, enfoque y transparencia</label>
+    <label><input type="radio" name="q9" value="c"> c) Respeto, compromiso, enfoque, coraje y adaptación.</label>
+    <label><input type="radio" name="q9" value="d"> d) Respeto, compromiso, enfoque, coraje y apertura</label>
+  </div>
+</div>
+
+<div id="question-10" class="question-container">
+  <div class="question">10. Una de las responsabilidades del Scrum Master es asegurarse que las metas, alcance y dominio de producto sean entendidas por todos en el Scrum Team.</div>
+  <div class="options">
+    <label><input type="radio" name="q10" value="a"> a) Verdadero</label>
+    <label><input type="radio" name="q10" value="b"> b) Falso</label>
+  </div>
+</div>
+
+<div id="question-11" class="question-container">
+  <div class="question">11. ¿Quiénes son los miembros principales de cualquier Scrum Team?</div>
+  <div class="options">
+    <label><input type="radio" name="q11" value="a"> a) El Produc Owner, el Development Team y el Project Manager.</label>
+    <label><input type="radio" name="q11" value="b"> b) El Produc Owner, el Development Team y el Scrum Master.</label>
+    <label><input type="radio" name="q11" value="c"> c) El Produc Owner, el Project Manager y el Scrum Master.</label>
+    <label><input type="radio" name="q11" value="d"> d) El Scrum Master y el Development Team.</label>
+  </div>
+</div>
+
+<div id="question-12" class="question-container">
+  <div class="question">12. El Scrum Master es responsable de ordenar los ítems en el Product Backlog para alcanzar las metas y objetivos de mejor forma.</div>
+  <div class="options">
+    <label><input type="radio" name="q12" value="a"> a) Verdadero.</label>
+    <label><input type="radio" name="q12" value="b"> b) Falso</label>
+    <p>Es responsabilidad del Product Owner</p>
+  </div>
+</div>
+
+<div id="question-13" class="question-container">
+  <div class="question">
+    13. El modelo de equipo en Scrum está diseñado para:
+    <br>
+    <br>
+    <ol>
+      <li>1.Optimizar la flexibilidad.</li>
+      <li>2.Optimizar la creatividad.</li>
+      <li>3.Optimizar la productividad.</li>
+    </ol>
+  </div>
+
+  <div class="options">
+    <label><input type="radio" name="q13" value="a"> a) 1.</label>
+    <label><input type="radio" name="q13" value="b"> b) 2.</label>
+    <label><input type="radio" name="q13" value="c"> c) 1 y 2.</label>
+    <label><input type="radio" name="q13" value="d"> d) 1,2 y 3.</label>
+    <p>Siempre se maximiza el valor</p>
+  </div>
+</div>
+
+<div id="question-14" class="question-container">
+  <div class="question">14. El Product Owner es un líder servicial para el Scrum Team.</div>
+  <div class="options">
+    <label><input type="radio" name="q14" value="a"> a) Verdadero.</label>
+    <label><input type="radio" name="q14" value="b"> b) Falso</label>
+    <p>Es tarea del Scrum Master</p>
+  </div>
+</div>
+
+<div id="question-15" class="question-container">
+  <div class="question">15. Esto no se discute durante la revisión de Sprint:</div>
+  <div class="options">
+    <label><input type="radio" name="q15" value="a"> a) Evaluación del próximo Sprint.</label>
+    <label><input type="radio" name="q15" value="b"> b) Lo que salió bien.</label>
+    <label><input type="radio" name="q15" value="c"> c) Qué hacer a continuación.</label>
+  </div>
+</div>
+
+<div id="question-16" class="question-container">
+  <div class="question">16. Scrum no reconoce sub-equipos en el Development Team, independientemente de los dominios que deben abordarse como pruebas, arquitectura, operaciones o análisis de negocios.</div>
+  <div class="options">
+    <label><input type="radio" name="q16" value="a"> a) Verdadero.</label>
+    <label><input type="radio" name="q16" value="b"> b) Falso.</label>
+  </div>
+</div>
+
+<div id="question-17" class="question-container">
+  <div class="question">17. El Scrum Master sirve al Development Team de varias maneras, incluida la comprensión de la planeación de productos en un entorno empírico.</div>
+  <div class="options">
+    <label><input type="radio" name="q17" value="a"> a) Verdadero.</label>
+    <label><input type="radio" name="q17" value="b"> b) Falso</label>
+    <p>Es responsabilidad del Scrum Master con el Product Owner, hay una experiencia previa que debe emplearse.</p>
+  </div>
+</div>
+
+<div id="question-18" class="question-container">
+  <div class="question">18. Esto generalmente se discute en el Daily Scrum: Revisión del calendario, el presupuesto y las capacidades potenciales.</div>
+  <div class="options">
+    <label><input type="radio" name="q18" value="a"> a) Verdadero.</label>
+    <label><input type="radio" name="q18" value="b"> b) Falso</label>
+  </div>
+</div>
+
+<div id="question-19" class="question-container">
+  <div class="question">19. Scrum ahora se usa ampliamente para productos y servicios.</div>
+  <div class="options">
+    <label><input type="radio" name="q19" value="a"> a) Verdadero</label>
+    <label><input type="radio" name="q19" value="b"> b) Falso</label>
+  </div>
+</div>
+
+<div id="question-20" class="question-container">
+  <div class="question">20. ¿Qué entiende por el término «Sprint»?</div>
+  <div class="options">
+    <label><input type="radio" name="q20" value="a"> a) Es el progreso de un proyecto.</label>
+    <label><input type="radio" name="q20" value="b"> b) Es el tiempo requerido para completar un proyecto.</label>
+    <label><input type="radio" name="q20" value="c"> c) Es el corazón de Scrum.</label>
+    <label><input type="radio" name="q20" value="d"> d) Es el intervalo de tiempo durante la ejecución de un evento Scrum.</label>
+  </div>
+</div>
+
+<div id="question-21" class="question-container">
+  <div class="question">
+    21. El Scrum Master realiza las siguientes actividades:
+    <br>
+    <br>
+    <p>¿Cuáles son las actividades del Scrum Master?</p>
+    <ol>
+      <li>Liderar a la organización en su adopción de Scrum.</li>
+      <li>Trabajar con otros Scrum Masters para aumentar la efectividad de la aplicación de Scrum en la organización.</li>
+      <li>Identificar las acumulaciones de productos para el Sprint.</li>
+      <li>Facilitar eventos de Scrum.</li>
+    </ol>
+  </div>
+  <div class="options">
+    <label><input type="radio" name="q21" value="a"> a) 1, 2 y 3.</label>
+    <label><input type="radio" name="q21" value="b"> b) 1, 2 y 4.</label>
+    <label><input type="radio" name="q21" value="c"> c) 1, 3 y 4.</label>
+    <label><input type="radio" name="q21" value="d"> d) 1, 2, 3 y 4.</label>
+  </div>
+</div>
+
+<div id="question-22" class="question-container">
+  <div class="question">22. ¿Cómo definirías Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q22" value="a"> a) Un medio para dividir un proyecto en sus partes componentes para que comprendamos exactamente lo que debemos hacer antes de comenzar el trabajo.</label>
+    <label><input type="radio" name="q22" value="b"> b) Un marco de procesos que se ha utilizado para gestionar el trabajo en productos complejos. Scrum no es un proceso, técnica o método definitivo.</label>
+    <label><input type="radio" name="q22" value="c"> c) Un marco que divide a los equipos en silos, solicitando a cada miembro del equipo que se concentre en un producto específico dentro de un marco de tiempo determinado.</label>
+    <label><input type="radio" name="q22" value="d"> d) Una metodología fácil de dominar para la entrega de proyectos complejos en el menor tiempo posible.</label>
+  </div>
+</div>
+
+<div id="question-23" class="question-container">
+  <div class="question">23. Scrum se usa como:</div>
+  <div class="options">
+    <label><input type="radio" name="q23" value="a"> a) Un medio para investigar e identificar mercados viables, tecnologías o capacidades de productos.</label>
+    <label><input type="radio" name="q23" value="b"> b) Una forma de trabajar para un ciclo de desarrollo continuo, liberando las características y mejoras del producto con la mayor frecuencia posible.</label>
+    <label><input type="radio" name="q23" value="c"> c) Un marco para gestionar varios entornos operativos en paralelo para el uso del producto.</label>
+    <label><input type="radio" name="q23" value="d"> d) Todo lo anterior.</label>
+  </div>
+</div>
+
+<div id="question-24" class="question-container">
+  <div class="question">24. ¿En qué tipo de entorno se ha comprobado que Scrum funciona de manera efectiva?</div>
+  <div class="options">
+    <label><input type="radio" name="q24" value="a"> a) En entornos que requieren transferencia de conocimiento iterativa e incremental.</label>
+    <label><input type="radio" name="q24" value="b"> b) En entornos donde se comprende bien un problema.</label>
+    <label><input type="radio" name="q24" value="c"> c) En entornos donde hay restricciones severas de tiempo.</label>
+    <label><input type="radio" name="q24" value="d"> d) En entornos que se basan en implementaciones de productos predecibles y por fases.</label>
+  </div>
+</div>
+
+<div id="question-25" class="question-container">
+  <div class="question">25. ¿Cuál de estos es un beneficio de Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q25" value="a"> a) Garantizar la calidad del producto en cada lanzamiento integrando todas las características solicitadas.</label>
+    <label><input type="radio" name="q25" value="b"> b) Se implementan todas las solicitudes de cambio.</label>
+    <label><input type="radio" name="q25" value="c"> c) Determinar el presupuesto de un proyecto.</label>
+    <label><input type="radio" name="q25" value="d"> d) Mejorar la previsibilidad al tiempo que mitiga el riesgo.</label>
+  </div>
+</div>
+
+<div id="question-26" class="question-container">
+  <div class="question">26. ¿Cuál de estos es responsabilidad del Scrum Master?</div>
+  <div class="options">
+    <label><input type="radio" name="q26" value="a"> El Scrum Master debe colaborar con el Development Team durante la planeación del Sprint, ayudando con las estimaciones del proyecto.</label>
+    <label><input type="radio" name="q26" value="b"> Scrum Master debe comunicar el progreso del proyecto a la organización en general, actualizando los equipos en cuanto a entregables y plazos.</label>
+    <label><input type="radio" name="q26" value="c"> El Scrum Master debe promover un entorno que facilite la creación de valor óptimo para el desarrollo.</label>
+    <label><input type="radio" name="q26" value="d"> El Scrum Master define las entregas de Sprints y los calendarios de lanzamiento a través de la comprensión de los requisitos de la organización.</label>
+  </div>
+</div>
+
+<div id="question-27" class="question-container">
+  <div class="question">27. ¿Cuál es el formato recomendado de Daily Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q27" value="a"> El Daily Scrum es la oportunidad del Scrum Master de proporcionar una actualización del proyecto al equipo, marcando áreas particulares de preocupación.</label>
+    <label><input type="radio" name="q27" value="b"> El Daily Scrum puede durar hasta una hora y es usado por el Development Team para discutir las complejidades del Sprint actual.</label>
+    <label><input type="radio" name="q27" value="c"> El Daily Scrum permite a la organización presentar preguntas al Development Team, buscando comentarios sobre el desarrollo del producto.</label>
+    <label><input type="radio" name="q27" value="d"> El Daily Scrum es un evento de 15 minutos en el cual los miembros del equipo se actualizan mutuamente en trabajos previos, trabajo por hacer e impedimentos para su trabajo.</label>
+  </div>
+</div>
+
+<div id="question-28" class="question-container">
+  <div class="question">28. Supongamos que se cancela un Sprint y el Product Owner descubre que se ha completado parte del trabajo y que las partes «hechas» son potencialmente liberables. ¿Qué hará el Product Owner?</div>
+  <div class="options">
+    <label><input type="radio" name="q28" value="a"> Rechazar y concentrarse en el próximo Sprint.</label>
+    <label><input type="radio" name="q28" value="b"> Vuelva a diseñar la pieza que no es liberable.</label>
+    <label><input type="radio" name="q28" value="c"> Normalmente acepta el trabajo.</label>
+    <label><input type="radio" name="q28" value="d"> Rechazar el trabajo.</label>
+  </div>
+</div>
+
+<div id="question-29" class="question-container">
+  <div class="question"></div>
+<div class="question">
+    29. El marco de Scrum consiste en:
+    <br>
+    <br>
+    <ol>
+      <li>1. Roles.</li>
+      <li>2. Eventos.</li>
+      <li>3. Artefactos.</li>
+      <li>4. Reglas.</li>
+    </ol>
+  </div>
+
+  <div class="options">
+    <label><input type="radio" name="q29" value="a"> a) 1.</label>
+    <label><input type="radio" name="q29" value="b"> b) 1 y 2.</label>
+    <label><input type="radio" name="q29" value="c"> c) 1, 2 y 3.</label>
+    <label><input type="radio" name="q29" value="d"> d) Todo lo anterior</label>
+  </div>
+</div>
+
+<div id="question-30" class="question-container">
+  <div class="question">30. ¿En cuál de las siguientes situaciones se puede cancelar un Sprint?</div>
+  <div class="options">
+    <label><input type="radio" name="q30" value="a"> Cuando se revisa el Sprint y descubre que se está quedando sin presupuesto.</label>
+    <label><input type="radio" name="q30" value="b"> Cuando la empresa cambia de dirección.</label>
+    <label><input type="radio" name="q30" value="c"> Si después de la revisión se encuentra que no es rentable.</label>
+    <label><input type="radio" name="q30" value="d"> Cuando el Product Owner renuncia.</label>
+  </div>
+</div>
+
+<div id="question-31" class="question-container">
+  <div class="question">31. El/La **_** de un Daily Scrum se establece por el **_**.</div>
+  <div class="options">
+    <label><input type="radio" name="q31" value="a"> a) Estructura; Development Team.</label>
+    <label><input type="radio" name="q31" value="b"> b) Plan; Product Owner.</label>
+    <label><input type="radio" name="q31" value="c"> c) Reunión; Scrum Master.</label>
+    <label><input type="radio" name="q31" value="d"> d) Objetivo; Scrum Team.</label>
+  </div>
+</div>
+
+<div id="question-32" class="question-container">
+  <div class="question">32. Al comienzo de un Daily Scrum, algunas de las preguntas que debe hacer son las siguientes:</div>
+  <div class="options">
+    <label><input type="checkbox" name="q32" value="a"> a) ¿Qué hice ayer que ayudó al Development Team a alcanzar el Sprint Goal?*</label>
+    <label><input type="checkbox" name="q32" value="b"> b) ¿Qué voy a hacer hoy para ayudar al Development Team a cumplir con la Sprint Goal?*</label>
+    <label><input type="checkbox" name="q32" value="c"> c) ¿Cuánto hemos alcanzado en el desarrollo del Sprint Goal?</label>
+    <label><input type="checkbox" name="q32" value="d"> d) ¿Veo algún impedimento que nos impida cumplir con el Sprint Goal?</label>
+  </div>
+</div>
+
+<div id="question-33" class="question-container">
+  <div class="question">33. ¿Cuál es una gran ventaja de usar el Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q33" value="a"> a) Proporciona una retroalimentación temprana y produce un producto mínimo viable para las partes interesadas.</label>
+    <label><input type="radio" name="q33" value="b"> b) Fácil de dominar.</label>
+    <label><input type="radio" name="q33" value="c"> c) Aplicable a todos los proyectos.</label>
+    <label><input type="radio" name="q33" value="d"> d) Requiere equipo pequeño.</label>
+  </div>
+</div>
+
+<div id="question-34" class="question-container">
+  <div class="question">34. Scrum se ha utilizado para desarrollar:</div>
+  <div class="options">
+    <label><input type="radio" name="q34" value="a"> a) Software.</label>
+    <label><input type="radio" name="q34" value="b"> b) Redes de función interactiva.</label>
+    <label><input type="radio" name="q34" value="c"> c) Vehículos autónomos.</label>
+    <label><input type="radio" name="q34" value="d"> d) Todo lo anterior.</label>
+  </div>
+</div>
+
+<div id="question-35" class="question-container">
+  <div class="question">35. ¿Cuál de los siguientes son eventos de Scrum?</div>
+  <div class="options">
+    <label><input type="radio" name="q35" value="a"> a) Sprint Planning.</label>
+    <label><input type="radio" name="q35" value="b"> b) Daily Scrum.</label>
+    <label><input type="radio" name="q35" value="c"> c) Sprint Review.</label>
+    <label><input type="radio" name="q35" value="d"> d) Todo lo anterior.</label>
+  </div>
+</div>
+
+<div id="question-36" class="question-container">
+  <div class="question">36. Cuando se cancela un Sprint, cualquier ítem completado y "****" del Product Backlog es "****".</div>
+  <div class="options">
+    <label><input type="radio" name="q36" value="a"> a) Terminado; implementado.</label>
+    <label><input type="radio" name="q36" value="b"> b) Hecho; implementado.</label>
+    <label><input type="radio" name="q36" value="c"> c) Completado; revisado.</label>
+    <label><input type="radio" name="q36" value="d"> d) Hecho; revisado.</label>
+  </div>
+</div>
+
+<div id="question-37" class="question-container">
+  <div class="question">37. El Daily Scrum es una reunión **_** del **_**.</div>
+  <div class="options">
+    <label><input type="radio" name="q37" value="a"> a) Interna; Development Team.</label>
+    <label><input type="radio" name="q37" value="b"> b) Externa; Scrum Team.</label>
+    <label><input type="radio" name="q37" value="c"> c) Interna; Scrum Team.</label>
+    <label><input type="radio" name="q37" value="d"> d) Externa; Development Team y el Scrum Master.</label>
+  </div>
+</div>
+
+<div id="question-38" class="question-container">
+  <div class="question">38. Se lleva a cabo un(a) **___** al final del Sprint para inspeccionar el incremento y adaptar el Product Backlog si es necesario.</div>
+  <div class="options">
+    <label><input type="radio" name="q38" value="a"> a) Sprint Retrospective.</label>
+    <label><input type="radio" name="q38" value="b"> b) Daily Scrum.</label>
+    <label><input type="radio" name="q38" value="c"> c) Sprint Review.</label>
+    <label><input type="radio" name="q38" value="d"> d) Sprint Planning.</label>
+  </div>
+</div>
+
+<div id="question-39" class="question-container">
+  <div class="question">39. El resultado de **___** es un Product Backlog revisado que define los elementos probables del Product Backlog para el próximo Sprint.</div>
+  <div class="options">
+    <label><input type="radio" name="q39" value="a"> a) Sprint Retrospective.</label>
+    <label><input type="radio" name="q39" value="b"> b) Product Backlog refinement.</label>
+    <label><input type="radio" name="q39" value="c"> c) Sprint Review.</label>
+    <label><input type="radio" name="q39" value="d"> d) Sprint Planning.</label>
+  </div>
+</div>
+
+<div id="question-40" class="question-container">
+  <div class="question">40. La Retrospectiva del Sprint es una oportunidad para que el **___** se inspeccione a sí mismo y cree un plan para que se realicen mejoras durante el próximo Sprint.</div>
+  <div class="options">
+    <label><input type="radio" name="q40" value="a"> a) Scrum Team y Stakeholders.</label>
+    <label><input type="radio" name="q40" value="b"> b) Scrum Team.</label>
+    <label><input type="radio" name="q40" value="c"> c) Development Team.</label>
+    <label><input type="radio" name="q40" value="d"> d) Development Team y Sponsor.</label>
+  </div>
+</div>
+
+<div id="question-41" class="question-container">
+<div class="question">
+    41. Brett fue contratado para ser el Scrum Master en la Compañía ABC. Antes, la compañía ABC estaba usando el modelo de cascada y ahora está implementando Scrum. ¿Cuáles son las formas en que Brett puede servir a la Compañía ABC?
+    <br>
+    <br>
+    <ol>
+      <li>1. Planificando las implementaciones de Scrum dentro de la organización.</li>
+      <li>2. Ayudando a los interesados a crear un Balanced Score Card con las métricas de Scrum.</li>
+      <li>3. Al causar un cambio que aumenta la productividad del Scrum Team.</li>
+    </ol>
+  </div>
+
+  <div class="options">
+    <label><input type="radio" name="q41" value="a"> a) 1.</label>
+    <label><input type="radio" name="q41" value="b"> b) 1 y 2.</label>
+    <label><input type="radio" name="q41" value="c"> c) 1 y 3.</label>
+    <label><input type="radio" name="q41" value="d"> d) 1, 2 y 3.</label>
+  </div>
+</div>
+
+
+
+<div id="result"></div>
+<button id="result-button" class="nav-button" onclick="window.location.reload();">Refrescar</button>
+<script>
+  // Definir respuestas correctas
+   
+    const correctAnswers = {
+        q1: 'a',
+        q2: 'c',
+        q3: 'a',
+        q4: 'b',
+        q5: 'b',
+        q6: '4',
+        q7: 'b',
+        q8: 'a',
+        q9: 'd',
+        q10: 'a',
+        q11: 'b',
+        q12: 'b',
+        q13: 'd',
+        q14: 'b',
+        q15: 'a',
+        q16: 'a',
+        q17: 'b',
+        q18: 'b',
+        q19: 'a',
+        q20: 'c',
+        q21: 'b',
+        q22: 'b',
+        q23: 'd',
+        q24: 'a',
+        q25: 'a',
+        q26: 'c',
+        q27: 'd',
+        q28: 'c',
+        q29: 'd',
+        q30: 'b',
+        q31: 'a',
+        q32: 'a,b,d',
+        q33: 'a',
+        q34: 'd',
+        q35: 'd',
+        q36: 'd',
+        q37: 'a',
+        q38: 'c',
+        q39: 'c',
+        q40: 'b',
+        q41: 'c'
+    };
+
+// Función para calcular el resultado
+function calculateResult() {
+  let score = 0;
+  for (let question in correctAnswers) {
+    const selectedOptions = document.querySelectorAll(`input[name="${question}"]:checked`);
+    if (selectedOptions.length > 0) {
+      const selectedValues = Array.from(selectedOptions).map(option => option.value);
+      const correctValues = correctAnswers[question].split(',');
+
+      // Verificar si las opciones seleccionadas son las mismas que las correctas
+      const correct = correctValues.every(value => selectedValues.includes(value));
+
+      if (correct) {
+        score++;
+      }
+    }
+  }
+  return score;
+}
+
+// Función para mostrar el resultado
+function showResult() {
+  const score = calculateResult();
+  const resultContainer = document.getElementById('result');
+  resultContainer.innerHTML = `Respuestas correctas: ${score} de 41`;
+  resultContainer.style.display = 'block';
+  const resultButton = document.getElementById('result-button');
+  resultButton.style.display = 'block';
+}
+
+
+let questionCounter = 1;
+
+// Event listeners para botones Siguiente y Anterior
+document.querySelectorAll('.question-container').forEach((question, index) => {
+    const nextButton = document.createElement('button');
+    nextButton.textContent = 'Siguiente';
+    nextButton.classList.add('nav-button'); 
+    nextButton.addEventListener('click', () => {
+        const selectedOptions = question.querySelectorAll(`input[type="radio"]:checked, input[type="checkbox"]:checked`);
+        if (selectedOptions.length === 0) {
+            alert("Por favor, selecciona al menos una opción antes de continuar.");
+            return; 
+        }
+        question.style.display = 'none';
+        const nextQuestion = document.getElementById(`question-${index + 2}`);
+        if (nextQuestion) {
+            nextQuestion.style.display = 'block';
+            questionCounter++; 
+            updateCounter(); 
+        } else {
+            showResult();
+        }
+    });
+    question.appendChild(nextButton);
+
+    if (index !== 0) {
+        const prevButton = document.createElement('button');
+        prevButton.textContent = 'Anterior';
+        prevButton.classList.add('nav-button');
+        prevButton.addEventListener('click', () => {
+            question.style.display = 'none';
+            const prevQuestion = document.getElementById(`question-${index}`);
+            if (prevQuestion) {
+                prevQuestion.style.display = 'block';
+                questionCounter--; 
+                updateCounter(); 
+            }
+        });
+        question.appendChild(prevButton);
+    }
+});
+
+// Función para actualizar el contador en el HTML
+function updateCounter() {
+    const counterElement = document.getElementById('question-counter');
+    counterElement.textContent = `${questionCounter} / 41`;
+}
+
+  // Ocultar todas las preguntas excepto la primera
+  document.querySelectorAll('.question-container').forEach((question, index) => {
+    if (index !== 0) {
+      question.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
+
